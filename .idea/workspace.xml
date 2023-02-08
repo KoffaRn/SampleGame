@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="888ad61e-0060-4e10-9f1f-ee145e40d6f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/player/boy_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+    <list default="true" id="888ad61e-0060-4e10-9f1f-ee145e40d6f3" name="Changes" comment="Added classes and resources">
+      <change afterPath="$PROJECT_DIR$/res/maps/map01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/wall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +58,8 @@
       <recent name="C:\Users\lilam\java\SampleGame\res\player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lilam\java\SampleGame\res\maps" />
+      <recent name="C:\Users\lilam\java\SampleGame\res\tiles" />
       <recent name="C:\Users\lilam\java\SampleGame\res\player" />
     </key>
   </component>
@@ -84,6 +72,14 @@
       <option name="presentableId" value="Default" />
       <updated>1675864325034</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added classes and resources">
+      <created>1675870873258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675870873258</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added classes and resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added classes and resources" />
   </component>
 </project>
