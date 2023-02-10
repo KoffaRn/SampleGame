@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="888ad61e-0060-4e10-9f1f-ee145e40d6f3" name="Changes" comment="Added TileManager, Entity manager, Player class">
-      <change afterPath="$PROJECT_DIR$/res/maps/world01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/earth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/sand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/boots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/chest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/door.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Chest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/SuperObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/map01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/maps/map01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/tiles/grass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/tiles/wall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/tiles/water.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +45,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/lilam/java/SampleGame/res/maps",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lilam/java/SampleGame/res/objects&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lilam\java\SampleGame\res\objects" />
       <recent name="C:\Users\lilam\java\SampleGame\res\maps" />
       <recent name="C:\Users\lilam\java\SampleGame\res\player" />
     </key>
@@ -69,6 +68,26 @@
       <recent name="C:\Users\lilam\java\SampleGame\res\maps" />
       <recent name="C:\Users\lilam\java\SampleGame\res\player" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="SampleGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
