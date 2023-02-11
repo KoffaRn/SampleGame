@@ -2,7 +2,6 @@ package main;
 
 import entity.Player;
 import objects.SuperObject;
-import tile.Tile;
 import tile.TileManager;
 
 import javax.swing.JPanel;
@@ -49,7 +48,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     public void setupGame() {
         aSetter.setObject();
-        playMusic(Sound.soundFiles[0]);
+        playMusic(0);
     }
     public void startGameThread() {
         gameThread = new Thread(this);
@@ -101,16 +100,16 @@ public class GamePanel extends JPanel implements Runnable {
         ui.draw(g2);
         g2.dispose();
     }
-    public void playMusic(String musicFile) {
-        music.setFile(musicFile);
+    public void playMusic(int i) {
+        music.setFile(Sound.soundFiles[i]);
         music.play();
         music.loop();
     }
     public void stopMusic() {
         music.stop();
     }
-    public void playSE(String string) {
-        se.setFile(string);
+    public void playSE(int i) {
+        se.setFile(se.soundFiles[i]);
         se.play();
     }
 }

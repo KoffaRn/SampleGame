@@ -2,7 +2,6 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
-import main.Sound;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -12,7 +11,6 @@ import java.io.IOException;
 public class Player extends Entity{
     GamePanel gp;
     KeyHandler keyH;
-    Sound se;
     public final int screenX;
     public final int screenY;
     public int hasKey = 0;
@@ -67,19 +65,19 @@ public class Player extends Entity{
                 spriteCounter = 0;
             }
         }
-        if(keyH.upPressed == true) {
+        if(keyH.upPressed) {
             direction = "up";
 
         }
-        else if(keyH.downPressed == true) {
+        else if(keyH.downPressed) {
             direction = "down";
 
         }
-        else if(keyH.leftPressed == true) {
+        else if(keyH.leftPressed) {
             direction = "left";
 
         }
-        else if(keyH.rightPressed == true) {
+        else if(keyH.rightPressed) {
             direction = "right";
 
         }
@@ -92,19 +90,19 @@ public class Player extends Entity{
         pickUpObject(objIndex);
 
         // if collision false player can move
-        if(collisionOn == false) {
+        if(!collisionOn) {
             switch(direction) {
                 case "up":
-                    if(keyH.upPressed == true) { worldY -= speed; }
+                    if(keyH.upPressed) { worldY -= speed; }
                     break;
                 case "down":
-                    if(keyH.downPressed == true) {worldY += speed; }
+                    if(keyH.downPressed) {worldY += speed; }
                     break;
                 case "left":
-                    if(keyH.leftPressed == true) {worldX -= speed;}
+                    if(keyH.leftPressed) {worldX -= speed;}
                     break;
                 case "right":
-                    if(keyH.rightPressed == true) {worldX += speed;}
+                    if(keyH.rightPressed) {worldX += speed;}
                     break;
 
             }
@@ -116,13 +114,13 @@ public class Player extends Entity{
             switch(objectName) {
                 case "Key":
                     hasKey++;
-                    gp.playSE(se.soundFiles[1]);
+                    gp.playSE(1);
                     gp.obj[i] = null;
                     gp.ui.showMessage("Got key!");
                     break;
                 case "Door":
                     if(hasKey > 0) {
-                        gp.playSE(se.soundFiles[2]);
+                        gp.playSE(2);
                         gp.obj[i] = null;
                         hasKey--;
                     }
@@ -133,8 +131,13 @@ public class Player extends Entity{
                 case "Boots":
                     speed += 2;
                     gp.obj[i] = null;
-                    gp.playSE(se.soundFiles[4]);
+                    gp.playSE(4);
                     gp.ui.showMessage("Speed up!");
+                    break;
+                case "Chest":
+                    gp.ui.gameFinished = true;
+                    gp.stopMusic();
+                    gp.playSE(3);
                     break;
             }
         }
