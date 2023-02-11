@@ -2,6 +2,7 @@ package entity;
 
 import main.GamePanel;
 import main.KeyHandler;
+import main.Sound;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -11,8 +12,10 @@ import java.io.IOException;
 public class Player extends Entity{
     GamePanel gp;
     KeyHandler keyH;
+    Sound se;
     public final int screenX;
     public final int screenY;
+    public int hasKey = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
@@ -24,6 +27,8 @@ public class Player extends Entity{
         solidArea = new Rectangle();
         solidArea.x = 8;
         solidArea.y = 16;
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
         solidArea.width = 32;
         solidArea.height = 32;
 
@@ -81,6 +86,11 @@ public class Player extends Entity{
         //Check tile collision
         collisionOn = false;
         gp.cChecker.checkTile(this);
+
+        //Check object collision
+        int objIndex = gp.cChecker.checkObject(this, true);
+        pickUpObject(objIndex);
+
         // if collision false player can move
         if(collisionOn == false) {
             switch(direction) {
@@ -97,6 +107,35 @@ public class Player extends Entity{
                     if(keyH.rightPressed == true) {worldX += speed;}
                     break;
 
+            }
+        }
+    }
+    public void pickUpObject(int i) {
+        if(i != 999) {
+            String objectName = gp.obj[i].name;
+            switch(objectName) {
+                case "Key":
+                    hasKey++;
+                    gp.playSE(se.soundFiles[1]);
+                    gp.obj[i] = null;
+                    gp.ui.showMessage("Got key!");
+                    break;
+                case "Door":
+                    if(hasKey > 0) {
+                        gp.playSE(se.soundFiles[2]);
+                        gp.obj[i] = null;
+                        hasKey--;
+                    }
+                    else {
+                        gp.ui.showMessage("Get a key!");
+                    }
+                    break;
+                case "Boots":
+                    speed += 2;
+                    gp.obj[i] = null;
+                    gp.playSE(se.soundFiles[4]);
+                    gp.ui.showMessage("Speed up!");
+                    break;
             }
         }
     }

@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="888ad61e-0060-4e10-9f1f-ee145e40d6f3" name="Changes" comment="Added TileManager, Entity manager, Player class">
-      <change afterPath="$PROJECT_DIR$/res/objects/boots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/chest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/door.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Chest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Door.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/SuperObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/BlueBoyAdventure.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/coin.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/dooropen.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/fanfare.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/powerup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Boots.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/OBJ_Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/SuperObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +55,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lilam/java/SampleGame/res/objects&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lilam/java/SampleGame/res/sound&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lilam\java\SampleGame\res\sound" />
       <recent name="C:\Users\lilam\java\SampleGame\res\objects" />
       <recent name="C:\Users\lilam\java\SampleGame\res\maps" />
       <recent name="C:\Users\lilam\java\SampleGame\res\player" />
@@ -112,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675875065232</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added TileManager, Entity manager, Player class">
+      <created>1676018247861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676018247861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
