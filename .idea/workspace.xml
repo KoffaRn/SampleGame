@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="888ad61e-0060-4e10-9f1f-ee145e40d6f3" name="Changes" comment="Dev">
-      <change afterPath="$PROJECT_DIR$/src/main/UtilityTool.java" afterDir="false" />
+    <list default="true" id="888ad61e-0060-4e10-9f1f-ee145e40d6f3" name="Changes" comment="Optimized draw method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/OBJ_Boots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/OBJ_Boots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/OBJ_Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/OBJ_Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/OBJ_Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/OBJ_Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects/SuperObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +18,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -161,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676363742541</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Optimized draw method">
+      <created>1676366013958</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676366013958</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +177,7 @@
     <MESSAGE value="Added classes and resources" />
     <MESSAGE value="Added TileManager, Entity manager, Player class" />
     <MESSAGE value="Dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dev" />
+    <MESSAGE value="Optimized draw method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized draw method" />
   </component>
 </project>
